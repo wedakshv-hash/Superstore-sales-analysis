@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - HealthCare Plus</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+        nav {
+            background-color: #0077b6;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h1 { color: white; font-size: 24px; }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-size: 16px; }
+        nav a:hover { color: #90e0ef; }
+        .hero {
+            background-color: #caf0f8;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h2 { font-size: 36px; color: #03045e; margin-bottom: 15px; }
+        .hero p { font-size: 18px; color: #0077b6; }
+        .form-container {
+            max-width: 600px;
+            margin: 60px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .form-container h3 { 
+            color: #03045e; 
+            margin-bottom: 25px; 
+            font-size: 24px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            color: #03045e;
+            margin-bottom: 8px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .form-group input, 
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+        .form-group select { cursor: pointer; }
+        .submit-btn {
+            width: 100%;
+            background-color: #0077b6;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .submit-btn:hover { background-color: #03045e; }
+        .success-msg {
+            display: none;
+            background-color: #caf0f8;
+            color: #03045e;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        footer {
+            background-color: #03045e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>🏥 HealthCare Plus</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <h2>📅 Book Appointment</h2>
+        <p>Schedule your visit with our expert doctors</p>
+    </div>
+    <div class="form-container">
+        <h3>Fill Appointment Form</h3>
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name">
+        </div>
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label>Select Department</label>
+            <select>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Dentistry</option>
+                <option>Ophthalmology</option>
+                <option>Orthopedics</option>
+                <option>Pediatrics</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Select Doctor</label>
+            <select>
+                <option>Dr. Sharma - Cardiologist</option>
+                <option>Dr. Gupta - Neurologist</option>
+                <option>Dr. Verma - Dentist</option>
+                <option>Dr. Singh - Ophthalmologist</option>
+                <option>Dr. Mehta - Orthopedic</option>
+                <option>Dr. Patel - Pediatrician</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Appointment Date</label>
+            <input type="date">
+        </div>
+        <div class="form-group">
+            <label>Appointment Time</label>
+            <input type="time">
+        </div>
+        <div class="form-group">
+            <label>Message (Optional)</label>
+            <textarea rows="3" placeholder="Any specific concern or message"></textarea>
+        </div>
+        <button class="submit-btn" onclick="document.querySelector('.success-msg').style.display='block'">
+            Book Appointment
+        </button>
+        <div class="success-msg">
+            ✅ Appointment booked successfully! We will contact you soon.
+        </div>
+    </div>
+    <footer>
+        <p>© 2026 HealthCare Plus. All rights reserved.</p>
+    </footer>
+</body>
+</html>

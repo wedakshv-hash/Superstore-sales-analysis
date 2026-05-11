@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Plus</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+        
+        /* Navbar */
+        nav {
+            background-color: #0077b6;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h1 { color: white; font-size: 24px; }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+        nav a:hover { color: #90e0ef; }
+
+        /* Hero Section */
+        .hero {
+            background-color: #caf0f8;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h2 { font-size: 42px; color: #03045e; margin-bottom: 15px; }
+        .hero p { font-size: 18px; color: #0077b6; margin-bottom: 25px; }
+        .hero button {
+            background-color: #0077b6;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .hero button:hover { background-color: #03045e; }
+
+        /* Services */
+        .services {
+            padding: 60px 30px;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .services h2 { font-size: 32px; color: #03045e; margin-bottom: 40px; }
+        .service-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            width: 220px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .card h3 { color: #0077b6; margin-bottom: 10px; }
+        .card p { color: #555; font-size: 14px; }
+
+        /* Doctors */
+        .doctors {
+            padding: 60px 30px;
+            text-align: center;
+            background-color: #caf0f8;
+        }
+        .doctors h2 { font-size: 32px; color: #03045e; margin-bottom: 40px; }
+        .doctor-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .doctor-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            width: 200px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .doctor-card h3 { color: #03045e; margin-bottom: 5px; }
+        .doctor-card p { color: #0077b6; font-size: 14px; }
+
+        /* Contact */
+        .contact {
+            padding: 60px 30px;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .contact h2 { font-size: 32px; color: #03045e; margin-bottom: 30px; }
+        .contact input, .contact textarea {
+            display: block;
+            margin: 10px auto;
+            padding: 12px;
+            width: 350px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+        .contact button {
+            margin-top: 15px;
+            background-color: #0077b6;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact button:hover { background-color: #03045e; }
+
+        /* Footer */
+        footer {
+            background-color: #03045e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>🏥 HealthCare Plus</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <h2>Your Health, Our Priority</h2>
+        <p>Quality healthcare services for you and your family</p>
+        <a href="appointment.html"><button>Book Appointment</button></a>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>🫀 Cardiology</h3>
+                <p>Expert heart care and treatment</p>
+            </div>
+            <div class="card">
+                <h3>🧠 Neurology</h3>
+                <p>Brain and nervous system care</p>
+            </div>
+            <div class="card">
+                <h3>🦷 Dentistry</h3>
+                <p>Complete dental care solutions</p>
+            </div>
+            <div class="card">
+                <h3>👁️ Ophthalmology</h3>
+                <p>Eye care and vision treatment</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors -->
+    <section class="doctors" id="doctors">
+        <h2>Our Doctors</h2>
+        <div class="doctor-cards">
+            <div class="doctor-card">
+                <h3>Dr. Sharma</h3>
+                <p>Cardiologist</p>
+            </div>
+            <div class="doctor-card">
+                <h3>Dr. Gupta</h3>
+                <p>Neurologist</p>
+            </div>
+            <div class="doctor-card">
+                <h3>Dr. Verma</h3>
+                <p>Dentist</p>
+            </div>
+            <div class="doctor-card">
+                <h3>Dr. Singh</h3>
+                <p>Ophthalmologist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 HealthCare Plus. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

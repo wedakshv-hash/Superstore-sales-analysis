@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors - HealthCare Plus</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+        nav {
+            background-color: #0077b6;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav h1 { color: white; font-size: 24px; }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-size: 16px; }
+        nav a:hover { color: #90e0ef; }
+        .hero {
+            background-color: #caf0f8;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h2 { font-size: 36px; color: #03045e; margin-bottom: 15px; }
+        .hero p { font-size: 18px; color: #0077b6; }
+        .doctors {
+            padding: 60px 30px;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .doctor-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .doctor-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            width: 220px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .doctor-card h3 { color: #03045e; margin-bottom: 8px; font-size: 18px; }
+        .doctor-card p { color: #0077b6; font-size: 14px; margin-bottom: 5px; }
+        .doctor-card span { color: #555; font-size: 13px; }
+        footer {
+            background-color: #03045e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>🏥 HealthCare Plus</h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <h2>Our Doctors</h2>
+        <p>Meet our team of expert doctors</p>
+    </div>
+    <div class="doctors">
+        <div class="doctor-cards">
+            <div class="doctor-card">
+                <h3>👨‍⚕️ Dr. Sharma</h3>
+                <p>Cardiologist</p>
+                <span>15 years experience</span>
+            </div>
+            <div class="doctor-card">
+                <h3>👩‍⚕️ Dr. Gupta</h3>
+                <p>Neurologist</p>
+                <span>12 years experience</span>
+            </div>
+            <div class="doctor-card">
+                <h3>👨‍⚕️ Dr. Verma</h3>
+                <p>Dentist</p>
+                <span>10 years experience</span>
+            </div>
+            <div class="doctor-card">
+                <h3>👩‍⚕️ Dr. Singh</h3>
+                <p>Ophthalmologist</p>
+                <span>8 years experience</span>
+            </div>
+            <div class="doctor-card">
+                <h3>👨‍⚕️ Dr. Mehta</h3>
+                <p>Orthopedic</p>
+                <span>20 years experience</span>
+            </div>
+            <div class="doctor-card">
+                <h3>👩‍⚕️ Dr. Patel</h3>
+                <p>Pediatrician</p>
+                <span>11 years experience</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2026 HealthCare Plus. All rights reserved.</p>
+    </footer>
+</body>
+</html>
